@@ -1,113 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> ASSIGNMENT FORM </title><!-- To add Title -->
+<link rel="stylesheet" href="form.css">
+<title> ASSIGNMENT FORM </title>
+    <script>
+		function name12(event) {
+			const disallowedChars = [',', '.', '!', '?', '@', '#', '$', '%', '^', '&', '*', '[', ']', '{', '}', '|', '\\', '/', '`', '~', '+', '=', ';', ':', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '<', '>', '₹'];
+			const keyPressed = String.fromCharCode(event.keyCode);
+			if (disallowedChars.includes(keyPressed)) {
+				event.preventDefault();
+				return false;
+			}
+			return true;
+		}
+	</script>
+	<script>
+		function email12(event) {
+			const disallowedChars = [',', '(', ')', '[', ']', '\\', ';', ':', '<', '>' ];
+			const keyPressed = String.fromCharCode(event.keyCode);
+			if (disallowedChars.includes(keyPressed)) {
+				event.preventDefault();
+				return false;
+			}
+			return true;
+		}
+	</script>
+    <script>
+		function number12(event) {
+			const disallowedChars = [',', '!', '?', '@', '#', '$', '%', '^', '&', '*', '[', ']', '{', '}', '|', '\\', '/', '`', '~', '+', '=', ';', ':', '<', '>', '₹', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ];
+			const keyPressed = String.fromCharCode(event.keyCode);
+			if (disallowedChars.includes(keyPressed)) {
+				event.preventDefault();
+				return false;
+			}
+			return true;
+		}
+	</script>
+    <script>
+		function other12(event) {
+			const disallowedChars = ['$', '%', '^', '&', '*', '[', ']', '{', '}', '`', '~', '+', '=', ';', '<', '>', '₹'];
+			const keyPressed = String.fromCharCode(event.keyCode);
+			if (disallowedChars.includes(keyPressed)) {
+				event.preventDefault();
+				return false;
+			}
+			return true;
+		}
+	</script>
+
 </head>
-<!-- The Main Containtent is Present in Body -->
-<body style=" background-color: #bfffff; padding-right: 400px; padding-left: 400px;">
-<!-- 
-    backgorung-color is to add color 
-    padding is to leave space 
-    #73C2FB =  Light Blue color in HEX code
--->
+<body>
+<section>
+<div class="form-value">
+<form action="FeedBackSave.php" method="get" onsubmit="return validateInput()">
+<br><br><h2>FeedBack Form</h2>
 
-<form style="Background-color:#87CEFA;" action="data.php" method="get">
-<!-- 
-    #0080FF =  Blue color in HEX code
-    action is the page of output
-    methad is the type to send the data(get or post)
--->
+<div class="inputbox">
+<ion-icon name="person-sharp"></ion-icon>
+<input type="text" id="firstname" name="firstname" maxlength="20" autocomplete="off" onkeypress="return name12(event)" required>
+<label> First Name </label>
+</div>
 
-<h1 style="Background-color:#0000FF;" align="center"><br>Welcome to this project<br></h1>
-<!--
-    <br> - tag is used to go to the next line
-    #000080 =  Dark Blue color in HEX code
-    align is to add a alignment (legt,center,right)
--->
-<label style=" padding-right: 25px; padding-left: 25px;"> First Name : </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<!--
-    <br> - tag is used to go to the next line
-    &nbsp; is to add space
--->
-<input type="text" name="firstname" placeholder="Enter your First Name" maxlength="20" style=" padding-right: 25px; padding-left: 25px;"> <br><br>
-</input>
-<!--
-    placeholder is the hint shown in the textbox 
-    maxlength is the max no. of charactors to be used in the textbox
--->
-<label style=" padding-right: 25px; padding-left: 25px;"> Last Name : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<!--
-    <br> - tag is used to go to the next line
-    &nbsp; is to add space
--->
-<input type="text" name="lastname" placeholder="Enter your Last Name" maxlength="20" style=" padding-right: 25px; padding-left: 25px;"> <br><br>
-</input>
-<!--
-    placeholder is the hint shown in the textbox 
-    maxlength is the max no. of charactors to be used in the textbox
--->
-<label style=" padding-right: 25px; padding-left: 25px;"> Father's Name : </label> &nbsp;
-<!--
-    <br> - tag is used to go to the next line
-    &nbsp; is to add space
--->
-<input type="text" name="fathername" placeholder="Enter your Father's Name" maxlength="20" style=" padding-right: 25px; padding-left: 25px;"> <br><br>
-</input>
-<!--
-    placeholder is the hint shown in the textbox 
-    maxlength is the max no. of charactors to be used in the textbox
--->
-<label style=" padding-right: 25px; padding-left: 25px;"> Mother's Name : </label> 
-<!--
-    <br> - tag is used to go to the next line
-    &nbsp; is to add space
--->
-<input type="text" name="mothername" placeholder="Enter your Mother's Name" maxlength="20" style=" padding-right: 25px; padding-left: 25px;"> <br><br>
-</input>
-<!--
-    placeholder is the hint shown in the textbox 
-    maxlength is the max no. of charactors to be used in the textbox
--->
-<label style=" padding-right: 25px; padding-left: 25px;">Phone Number : </label>
-<!--
-    <br> - tag is used to go to the next line
-    &nbsp; is to add space
--->
-<input type="number" name="number" placeholder="Enter your Number" maxlength="10" style=" padding-right: 25px; padding-left: 25px;"> <br><br>
-</input>
-<!--
-    placeholder is the hint shown in the textbox 
-    maxlength is the max no. of charactors to be used in the textbox
--->
+<div class="inputbox">
+<ion-icon name="people-sharp"></ion-icon>
+<input type="text" id="lastname" name="lastname" maxlength="20" autocomplete="off" onkeypress="return name12(event)" required>
+<label> Last Name : </label>
+</div>
 
-<label style=" padding-right: 25px; padding-left: 25px;"> Bulding : </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<!--
-    <br> - tag is used to go to the next line
-    &nbsp; is to add space
--->
-<input type="text" name="bulding" placeholder="Enter your Bulding Name" maxlength="20" style=" padding-right: 25px; padding-left: 25px;"> <br><br>
-</input>
-<!--
-    placeholder is the hint shown in the textbox 
-    maxlength is the max no. of charactors to be used in the textbox
--->
-<label style=" padding-right: 25px; padding-left: 25px;"> Lacality(Area) : </label> 
-<!--
-    <br> - tag is used to go to the next line
-    &nbsp; is to add space
--->
-<input type="text" name="Locality" placeholder="Enter your Area Name" maxlength="20" style=" padding-right: 25px; padding-left: 25px;"> <br><br>
-</input>
-<!--
-    placeholder is the hint shown in the textbox 
-    maxlength is the max no. of charactors to be used in the textbox
--->
+<div class="inputbox">
+<ion-icon name="call-sharp"></ion-icon>
+<input type="text" name="number" minlength="10" maxlength="10" autocomplete="off" onkeypress="return number12(event)" required>
+<label>Phone Number : </label>
+</div>
 
-<label style=" padding-right: 25px; padding-left: 25px;"> City: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="inputbox">
+<ion-icon name="compass-sharp"></ion-icon>
+<input type="text" name="Locality"  autocomplete="off" onkeypress="return other12(event)" required>
+<label > Lacality(Area) : </label>
+</div>
+
+<div class="select">
+<label > City: </label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <select name="City">
-    <!--
-        to add a list 
-    -->
 <option>Ahmadnagar</option>
 <option>Akola</option>
 <option>Amravati</option>
@@ -144,54 +119,57 @@
 <option>Wardha</option>
 <option>Yavatmal</option>
 </select>
+</div>
+
+<div class="inputbox">
+<input type="text" name="age" maxlength="3" autocomplete="off" onkeypress="return number12(event)" required>
+<label > Age : </label>
+</div>
+
+<div class="inputbox">
+<ion-icon name="mail-sharp"></ion-icon>
+<input type="Email" name="Email" maxlength="50" autocomplete="off" onkeypress="return email12(event)" required> 
+<label > Email Address: </label>
+</div>
+
+<div class="inputbox">
+<ion-icon name="help-sharp"></ion-icon>
+<input type="text" name="About" autocomplete="off" onkeypress="return other12(event)" required>
+<label for="learn">How did u learn about us </label>
+</div>
+
+<div class="inputbox">
+<ion-icon name="help-sharp"></ion-icon>
+<input type="text" name="Improved" autocomplete="off" onkeypress="return other12(event)" required>
+<label> What can be Improved  </label>
+</div>
+
+<div class="select">
+<label> How was your exprience ?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="Exprience">
+<option>Good</option>
+<option>Average</option>
+<option>Can Be Better</option>
+<option>Bad</option>
+</select>
+</div>
+
+<div class="select">
+<label> How Satisfied are u with our product ?</label> &nbsp;&nbsp;&nbsp;&nbsp;
+<select name="Satisfied">
+<option>Good</option>
+<option>Average</option>
+<option>Can Be Better</option>
+<option>Bad</option>
+</select>
+</div>
 <br><br>
 
+<button type="submit">Submit</button><br>
 
-<label style=" padding-right: 25px; padding-left: 25px;"> Age : </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<!--
-    <br> - tag is used to go to the next line
-    &nbsp; is to add space
--->
-<input type="number" name="age" placeholder="Enter your Age" maxlength="3" style=" padding-right: 25px; padding-left: 25px;"> <br><br>
-</input>
-<!--
-    placeholder is the hint shown in the textbox 
-    maxlength is the max no. of charactors to be used in the textbox
--->
-<label style=" padding-right: 25px; padding-left: 25px;"> Gender : </label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- to add a Radio button -->
-<input type="radio" name="Gender">Male </input><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="radio" name="Gender">Female </input><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="radio" name="Gender">Other </input><br>
-<br><br>
-
-<label style=" padding-right: 25px; padding-left: 25px;"> Email Address: </label>&nbsp;&nbsp;
-<!--
-    <br> - tag is used to go to the next line
-    &nbsp; is to add space
--->
-<input type="text" name="Email" placeholder="Enter your Email Address" maxlength="50" style=" padding-right: 25px; padding-left: 25px;"> <br><br><br>
-</input>
-<!--
-    placeholder is the hint shown in the textbox 
-    maxlength is the max no. of charactors to be used in the textbox
--->
-
-
-<!--
-    the following is the code to add 2 buttons
--->
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="submit" value="Submit" name="b1" style=" padding-right: 25px; padding-left: 25px;">
-</input><!-- add a submit button -->
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="Reset" value="Clear" name="Clear" sleep="500" style=" padding-right: 25px; padding-left: 25px;"> <br><br>
-</input><!-- add a clear button -->
-
-
-</form><!-- end the form -->
-</body><!-- end the body-->
-</html><!-- end the HTML code -->
+</form><br></div>
+</section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

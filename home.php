@@ -100,11 +100,11 @@
   <!-- main image & intro text -->
   <section id="intro">
     <div class="container-lg">
-    <div align="center">
-      <Button class="tracking-in-contract-bck-bottom btn-lg bg-primary">New Form</Button><br><br>
-      <Button class="tracking-in-contract-bck-bottom btn-lg bg-secondary">Track Previous Form</Button><br><br>
-      <Button class="tracking-in-contract-bck-bottom btn-lg bg-warning">Update Previous Form</Button><br><br>
-      <Button class="tracking-in-contract-bck-bottom btn-lg bg-transparent">Delete Previous Form</Button><br><br>
+    <div align="center" class="tracking-in-contract-bck-bottom">
+      <Button class="btn-lg bg-primary" id="next-Button" onclick="FeedBackForm()">New Form</Button><script src='buttonscript.js'></script><br><br>
+      <Button class="btn-lg bg-secondary" id="next-Button" onclick="tracking()">Track Previous Form</Button><script src='buttonscript.js'></script><br><br>
+      <Button class="btn-lg bg-warning" id="next-Button" onclick="update()">Update Previous Form</Button><script src='buttonscript.js'></script><br><br>
+      <Button class="btn-lg bg-transparent" id="next-Button" onclick="remove()">Delete Previous Form</Button><script src='buttonscript.js'></script><br><br>
       
     </div>
     </div>

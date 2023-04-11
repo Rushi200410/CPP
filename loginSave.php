@@ -19,40 +19,70 @@ $sql = "SELECT * FROM login where UserName='$UserName'";
 $result = $conn->query($sql);
 
 $row = mysqli_fetch_assoc($result);
-
+echo "<html>
+<head><style>
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s alternate both;
+	        animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s alternate both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+</style></head><body class='scale-up-center' align='center'><br><br><br><br><br><br><br><br><br><br>";
+// check if username is correct
 if ($result->num_rows > 0) 
 {
-	// Check if the password matches the hashed password in the database and if the user is authenticated
+	// Check if the password matches the password in the database and if the user is authenticated
 	if ($row['Pass'] == $Pass) 
     {
+        // chech if the user is not authencated
         if ($row['Authenticated'] == '0')
         {
-            echo "<button id='next-button' onclick='UnautotherizedPage()'>Next</button>
-            <script src='buttonscript.js'></script>";
+            echo " <h1>Welcome To FeedBackForm Website<h1><br><br>
+            <button style='font-size: 24px;' id='next-button' onclick='FeedBackForm()'>Next</button>
+            <script src='buttonscript.js'></script>"; //goes to feedbackform
         } 
-        else 
+        else  // user is authecanted
         {
-            echo "<button id='next-button' onclick='AutotherizedLogin()'>View Login Page</button>
+            echo "<h1> You Are an authorized user <br> click on the button whose table you want to see</h1><br>
+            <button style='font-size: 24px;' id='next-button' onclick='LoginTable()'>View Login Page</button>
             <script src='buttonscript.js'></script><br><br>
-            <button id='next-button' onclick='autotherizedPage2()'>View Feed-Backs</button>
-            <script src='buttonscript.js'></script>";
+            <button style='font-size: 24px;' id='next-button' onclick='FormTable()'>View Feed-Backs</button>
+            <script src='buttonscript.js'></script>";// goes to tables
         }
     }
-    else
+    else // incorrect pass
     {
-        echo "plz type correct UserName and Password";
-        echo "<br><button id='next-button' onclick='login()'>Back</button>
-            <script src='buttonscript.js'></script>";
+        echo "<h1>Plz type correct UserName and Password</h1>";
+        echo "<br><br><button style='font-size: 24px;' id='next-button' onclick='login()'>Back</button>
+            <script src='buttonscript.js'></script>";// goes to login pg
     }
 }
-else 
+else // incorrect username
 {
-    echo "Plz enter correct UserName";
-    echo "<br><button id='next-button' onclick='login()'>Back</button>
-    <script src='buttonscript.js'></script>";
+    echo "<h1>Plz enter correct UserName </h1>";
+    echo "<br><br><button style='font-size: 24px;' id='next-button' onclick='login()'>Back</button>
+    <script src='buttonscript.js'></script>"; // goes to login pg
 }
 
-
+echo "</body>";
 	// Close the database connection
 	mysqli_close($conn);
 ?>
