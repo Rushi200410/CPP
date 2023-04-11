@@ -45,7 +45,7 @@
             <a class="nav-link" href="#pricing">Pricing</a>
           </li>
           <li class="nav-item ms-2 d-none d-md-inline">
-            <a class="btn btn-secondary" href="#pricing">buy now</a>
+            <a class="btn btn-secondary" href="logo.php">buy now</a>
           </li>
           
         </ul>
