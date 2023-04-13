@@ -3,13 +3,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Net Ninja Pro - the Book</title>
+  <title>E-Commerc</title>
+  <link ref="icon" src="logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <style>
-    section{
+    .section{
       padding: 60px 0;
     }
+
+    .navbar {
+  top: 5;
+  width: 100%;
+  z-index: 999;
+  background: #41a4c3;
+}
+
   </style>
 </head>
 <body>
@@ -21,7 +30,7 @@
       <a class="navbar-brand" href="#intro">
         <span class="text-secondary fw-bold">
           <i class="bi bi-book-half"></i>
-          Net Ninja Pro - the Book
+          CODING LIFE
         </span>
       </a>
       <!-- toggle button for mobile nav -->
@@ -33,7 +42,7 @@
       <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#topics">About The Book</a>
+            <a class="nav-link" href="#topics">About The Feeds</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#reviews">Reviews</a>
@@ -52,37 +61,36 @@
       </div>
     </div>
   </nav>
-
+<div style="padding-top: 30; padding-bottom: 50;">
   <!-- main image & intro text -->
   <section id="intro">
     <div class="container-lg">
       <div class="row g-4 justify-content-center align-items-center">
         <div class="col-md-5 text-center text-md-start">
           <h1>
-            <div class="display-2">Black-Belt</div>
-            <div class="display-5 text-muted">Your Coding Skills</div>
-          </h1>
-          <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dignissimos?</p>
-          <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+            <div class="display-1">Feed Back</div></h1>
+            <h3><div class="text-muted">Your feedback is our fuel for growth.</div></h3>
+          <p class="lead my-4 text-muted">We're here to serve you better, and your feedback helps us do that.</p>
+          <a href="logo.php" class="btn btn-secondary btn-lg">Buy Now</a>
           <!-- open sidebar / offcanvas -->
           <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
-            Explore my other books
+            Explore my other Forms
           </a>
         </div>
         <div class="col-md-5 text-center d-none d-md-block">
           <!-- tooltip -->
-          <span class="tt" data-bs-placement="bottom" title="Net Ninja Pro book cover">
-            <img src="/assets/ebook-cover.png" class="img-fluid" alt="ebook">
+          <span class="tt" data-bs-placement="bottom" title="Form logo">
+            <img src="logo.png" class="img-fluid" alt="eform">
           </span>
         </div>
       </div>
     </div>
-  </section>
+  </section><br><br>
 
   <!-- pricing plans -->
   <section id="pricing" class="bg-light mt-5">
     <div class="container-lg">
-      <div class="text-center">
+      <div class="text-center"><br><br>
         <h2>Pricing Plans</h2>
         <p class="lead text-muted">Choose a pricing plan to suit you.</p>
       </div>
@@ -92,8 +100,8 @@
           <div class="card border-0">
             <div class="card-body text-center py-4">
               <h4 class="card-title">Starter Edition</h4>
-              <p class="lead card-subtitle">eBook download only</p>
-              <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+              <p class="lead card-subtitle">form download only</p>
+              <p class="display-5 my-4 text-primary fw-bold">₹199</p>
               <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
               <a href="#" class="btn btn-outline-primary btn-lg mt-3">
                 Buy Now
@@ -107,8 +115,8 @@
             <div class="card-header text-center text-primary">Most Popular</div>
             <div class="card-body text-center py-5">
               <h4 class="card-title">Complete Edition</h4>
-              <p class="lead card-subtitle">eBook download & all updates</p>
-              <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
+              <p class="lead card-subtitle">form download & all updates</p>
+              <p class="display-4 my-4 text-primary fw-bold">₹289</p>
               <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
               <a href="#" class="btn btn-outline-primary btn-lg mt-3">
                 Buy Now
@@ -122,7 +130,7 @@
             <div class="card-body text-center py-4">
               <h4 class="card-title">Ultimate Edition</h4>
               <p class="lead card-subtitle">download, updates & extras</p>
-              <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+              <p class="display-5 my-4 text-primary fw-bold">₹249</p>
               <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
               <a href="#" class="btn btn-outline-primary btn-lg mt-3">
                 Buy Now
@@ -139,12 +147,12 @@
   <section id="topics">
     <div class="container-md">
       <div class="text-center">
-        <h2>Inside the Book...</h2>
-        <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+        <h2>Inside the Form...</h2>
+        <p class="lead text-muted">A quick glance at the topics you'll see</p>
       </div>
       <div class="row my-5 g-5 justify-content-around align-items-center">
         <div class="col-6 col-lg-4">
-          <img src="/assets/kindle.png" class="img-fluid" alt="ebook">
+          <img src="logo.png" class="img-fluid" alt="form logo">
         </div>
         <div class="col-lg-6">
           
@@ -158,8 +166,7 @@
               </h2>
               <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
                 <div class="accordion-body">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
                 </div>
               </div>
             </div>
@@ -226,8 +233,8 @@
   <section id="reviews" class="bg-light">
     <div class="container-lg">
       <div class="text-center">
-        <h2><i class="bi bi-stars"></i>Book Reviews</h2>
-        <p class="lead">What my students have said about the book...</p>
+        <h2><i class="bi bi-stars"></i>Form Reviews</h2>
+        <p class="lead">What my students have said about the Form...</p>
       </div>
 
       <div class="row justify-content-center my-5">
@@ -299,69 +306,6 @@
     </div>
   </section>
 
-  <!-- contact form -->
-  <!-- form-control, form-label, form-select, input-group, input-group-text -->
-  <section id="contact">
-    <div class="container-lg">
-      
-      <div class="text-center">
-        <h2>Get in Touch</h2>
-        <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
-      </div>
-      <div class="row justify-content-center my-5">
-        <div class="col-lg-6">
-          
-          <form>
-            <label for="email" class="form-label">Email address:</label>
-            <div class="input-group mb-4">
-              <span class="input-group-text">
-                <i class="bi bi-envelope-fill text-secondary"></i>
-              </span>
-              <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
-              <!-- tooltip -->
-              <span class="input-group-text">
-                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
-                  <i class="bi bi-question-circle text-muted"></i>
-                </span>
-              </span>
-            </div>
-            <label for="name" class="form-label">Name:</label>
-            <div class="mb-4 input-group">
-              <span class="input-group-text">
-                <i class="bi bi-person-fill text-secondary"></i>
-              </span>
-              <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
-              <!-- tooltip -->
-              <span class="input-group-text">
-                <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
-                  <i class="bi bi-question-circle text-muted"></i>
-                </span>
-              </span>
-            </div>
-            <label for="subject" class="form-label">What is your question about?</label>
-            <div class="mb-4 input-group">
-              <span class="input-group-text">
-                <i class="bi bi-chat-right-dots-fill text-secondary"></i>
-              </span>
-              <select class="form-select" id="subject">
-                <option value="pricing" selected>Pricing query</option>
-                <option value="content">Content query</option>
-                <option value="other">Other query</option>
-              </select>
-            </div>
-            <div class="mb-4 mt-5 form-floating">
-              <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
-              <label for="query">Your query...</label>
-            </div>
-            <div class="mb-4 text-center">
-              <button type="submit" class="btn btn-secondary">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- get updates / modal trigger -->
   <section class="bg-light">
     <div class="container">
@@ -391,7 +335,7 @@
         <div class="modal-body">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, exercitationem laboriosam nihil minus voluptatibus harum aliquam consequatur pariatur inventore dignissimos illum excepturi ratione ipsum sit iusto alias eligendi fugit laborum?</p>
           <label for="modal-email" class="form-label">Your email address:</label>
-          <input type="text" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+          <input type="text" class="form-control" id="modal-email" placeholder="e.g. RushiBhansali@example.com">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary">Submit</button>
@@ -403,7 +347,7 @@
   <!-- side panel / offcanvas -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+      <h5 class="offcanvas-title" id="sidebar-label">My Other Forms</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
@@ -411,7 +355,7 @@
       <!-- dropdown -->
       <div class="dropdown mt-3">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
-          Choose a book title
+          Choose a form
         </button>
         <ul class="dropdown-menu" aria-labelledby="book-dropdown">
           <li><a class="dropdown-item" href="#">Become a React Superhero</a></li>
@@ -421,7 +365,7 @@
       </div>
     </div>
   </div>
-
+</div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script>

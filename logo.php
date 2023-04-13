@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Logo Page</title>
+    <title>Login </title>
+    <link rel="icon" href="logo.png">
 <style>
   body {
   margin: 0;
@@ -95,6 +96,6 @@ img {
 </script>
   </head>
   <body class="flip-scale-2-hor-top">
-    <img class="scale-up-center" src="logo.png" alt="Logo">
+    <img class="scale-up-center" src="logo.png" alt="Logo" width="2024" hight="2000">
   </body>
 </html> 

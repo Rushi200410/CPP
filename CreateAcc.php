@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <html lang="en">
         <head>
+            <link rel="icon" href="logo.png"> 
             <link rel="stylesheet" href="login.css">
             <link rel="icon" href="logo.png"> 
             <title>Create Account</title>

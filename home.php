@@ -101,10 +101,11 @@
   <section id="intro">
     <div class="container-lg">
     <div align="center" class="tracking-in-contract-bck-bottom">
-      <Button class="btn-lg bg-primary" id="next-Button" onclick="FeedBackForm()">New Form</Button><script src='buttonscript.js'></script><br><br>
-      <Button class="btn-lg bg-secondary" id="next-Button" onclick="tracking()">Track Previous Form</Button><script src='buttonscript.js'></script><br><br>
-      <Button class="btn-lg bg-warning" id="next-Button" onclick="update()">Update Previous Form</Button><script src='buttonscript.js'></script><br><br>
-      <Button class="btn-lg bg-transparent" id="next-Button" onclick="remove()">Delete Previous Form</Button><script src='buttonscript.js'></script><br><br>
+      <h1><label> Thank You for your response Mr/Ms. </label><br><u><b><label value="$username"></label></u></b><br><br></h1>
+      <a href="feedbackform.php"><Button class="btn-lg bg-primary" id="next-Button" title="if you submit a new form you cant edit or track the older one the old one">New Form</Button></a><br><br>
+      <a href="trecking.php"><Button class="btn-lg bg-secondary" id="next-Button">Track Previous Form</Button><br><br>
+      <a href="updateform.php"><Button class="btn-lg bg-warning" id="next-Button">Update Previous Form</Button></a><br><br>
+      <a href="deleteuserform.php"><Button class="btn-lg bg-transparent" id="next-Button">Delete Previous Form</Button></a><br><br>
       
     </div>
     </div>
