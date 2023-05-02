@@ -15,14 +15,16 @@ if ($conn->connect_error) {
 
 $UserName=$_GET["UserName"];
 $Pass=$_GET["Pass"];
-$_SESSION['username'] = $UserName;
+$_SESSION['UserName'] = $UserName;
 
 $sql = "SELECT * FROM login where UserName='$UserName'";
 $result = $conn->query($sql);
 
 $row = mysqli_fetch_assoc($result);
 echo "<html>
-<head><style>
+<head>
+<link rel='icon' href='logo.png'><title>Lgoin Account</title>
+<style>
 .scale-up-center {
 	-webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s alternate both;
 	        animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s alternate both;
@@ -58,7 +60,7 @@ if ($result->num_rows > 0)
         if ($row['Authenticated'] == '0')
         {
             echo " <h1>Welcome To FeedBackForm Website<h1><br><br>
-            <a href='feedbackform.php'><button style='font-size: 24px;' id='next-button'>Next</button></a>"; //goes to feedbackform
+            <a href='FeedBackForm.php'><button style='font-size: 24px;' id='next-button'>Next</button></a>"; //goes to feedbackform
         } 
         else  // user is authecanted
         {

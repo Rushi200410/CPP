@@ -11,13 +11,15 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$_SESSION['UserName'] = $UserName;
+
+$UserName = $_SESSION['UserName']; // assign the value of username session variable to $UserName
+
 // sql to delete a record
-$sql = "DELETE FROM form WHERE username=$UserName";
+$sql = "DELETE FROM form WHERE username='$UserName'";
 
 if ($conn->query($sql) === TRUE) {
   echo "<h1 align='center'> Record deleted successfully</h1><br><br>";
-  echo "<div align='center'><a href='formtable.php' align='center'><button align='center'>view feedbacks</button></a></div>";
+  echo "<div align='center'><a href='feedbackform.php' align='center'><button align='center'>Create New Feedback</button></a></div>";
 
 } else {
   echo "Error deleting record: " . $conn->error;

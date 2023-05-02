@@ -129,7 +129,7 @@ button{
     outline: none;
   }
   select option {
-    background-color: #4d77d0; /* set the background color */
+    background-color: #008dcc; /* set the background color */
     color: #fff;
   }
   select:focus {

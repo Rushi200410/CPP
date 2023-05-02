@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -12,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Read data from form
-$UserName=$_GET["UserName"];
+$UserName=$_SESSION['UserName'];
 $a=$_GET["firstname"];
 $b=$_GET["lastname"];
 $c=$_GET["number"];

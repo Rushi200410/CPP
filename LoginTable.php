@@ -54,7 +54,7 @@ $conn->close();
     <script>
       function deleteRecord(id) {
       if (confirm("Are you sure you want to delete this record?")) {
-        window.location.href = "deleteloginacc.php?id=" + id;
+        window.location.href = "deletelogin.php?id=" + id;
         }
       }
     </script>

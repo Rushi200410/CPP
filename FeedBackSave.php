@@ -23,11 +23,40 @@ if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO form (username, firstname, lastname, num, locality, city, Age, About, Improved, Exprience, Satisfied, email) VALUES ('$UserName','$a','$b','$c','$d','$e','$f','$h','$i','$j','$k','$l')";
+$sql = "INSERT INTO form (username, firstname, lastname, num, locality, city, Age, About, Improved, Exprience, Satisfied, email, approved) VALUES ('$UserName','$a','$b','$c','$d','$e','$f','$h','$i','$j','$k','$l','0')";
+echo "<html>
+<head>
+<link rel='icon' href='logo.png'><title>Lgoin Account</title>
+<style>
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s alternate both;
+	        animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s alternate both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+</style></head><body class='scale-up-center' align='center'><br><br><br><br><br><br><br><br><br><br>";
 
 if ($conn->query($sql) === TRUE) {
-echo "<div align='center'>Your Record Stored Successfully<br><br><br>
-    <a href='home.php'><button style='font-size: 24px;' id='next-button'>Next</button></a></div>";
+echo "<h1>Your Record Stored Successfully</h1><br><br>
+    <a href='home.php'><button style='font-size: 24px;' id='next-button'>Next</button></a>";
 }
 
 else {

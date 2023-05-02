@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Commerc</title>
-  <link ref="icon" src="logo.png">
+  <link rel="icon" href="logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <style>
     .section{
       padding: 60px 0;
@@ -89,7 +89,7 @@
 
   <!-- pricing plans -->
   <section id="pricing" class="bg-light mt-5">
-    <div class="container-lg">
+    <div class="container">
       <div class="text-center"><br><br>
         <h2>Pricing Plans</h2>
         <p class="lead text-muted">Choose a pricing plan to suit you.</p>
