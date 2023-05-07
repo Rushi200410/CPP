@@ -57,6 +57,11 @@ echo "<html>
 if ($conn->query($sql) === TRUE) {
 echo "<h1>Your Record Stored Successfully</h1><br><br>
     <a href='home.php'><button style='font-size: 24px;' id='next-button'>Next</button></a>";
+
+    $sender_phone_number = "9321542278"; // Replace with the desired sender phone number
+
+    // Execute the Python script with sender and recipient phone numbers as arguments
+    exec("python send_whatsapp_message.py $c $sender_phone_number");
 }
 
 else {
