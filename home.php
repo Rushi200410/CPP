@@ -74,7 +74,8 @@ $username = $_SESSION['UserName'];
       <!-- navbar brand / title -->
       <a class="navbar-brand" href="home.php">
         <span class="text-light fw-bold">
-          CPP Finel Year Project
+          
+           Home Page
         </span>
       </a>
       <!-- toggle button for mobile nav -->
@@ -110,10 +111,10 @@ $username = $_SESSION['UserName'];
     <div class="container-lg">
     <div align="center" class="tracking-in-contract-bck-bottom">
       <h1><label class="text-light"> Thank You for your response </label></u></b><br><br></h1>
-      <a href="feedbackform.php"><Button class="btn-lg btn btn-outline-dark" type="button" id="next-Button">New Form</Button></a><br><br>
-      <a href="#trecking"><Button class="btn-lg btn btn-outline-dark" type="button" id="next-Button">Track Previous Form</Button><br><br>
-      <a href="updateform.php"><Button class="btn-lg btn btn-outline-dark" type="button" id="next-Button">Update Previous Form</Button></a><br><br>
-      <a href="deleteuserform.php"><Button class="btn-lg btn btn-outline-dark" type="button" id="next-Button" title="delete all your forms">Delete Previous Form</Button></a><br><br>
+      <a href="feedbackform.php"><Button class="btn-lg btn btn-outline-light" type="button" id="next-Button">New Form</Button></a><br><br>
+      <a href="track.php"><Button class="btn-lg btn btn-outline-light" type="button" id="next-Button">Track Previous Form</Button><br><br>
+      <a href="updateform.php"><Button class="btn-lg btn btn-outline-light" type="button" id="next-Button">Update Previous Form</Button></a><br><br>
+      <a href="deleteuserform.php"><Button class="btn-lg btn btn-outline-light" type="button" id="next-Button" title="delete all your forms">Delete Previous Form</Button></a><br><br>
     </div>
     </div>
   </section>

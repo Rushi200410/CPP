@@ -51,15 +51,13 @@ echo "<!DOCTYPE html>
     <section>
         <div class='form-box'>
             <div class='form-value'>
-                <form action='loginSave.php' method='get' onsubmit='return validateInput()'>
-                    <h2>Login</h2>
+                <form action='editsave.php' method='get' onsubmit='return validateInput()'>
+                    <h2>Change Passwor</h2>
                     <div class='inputbox'>
-                        <ion-icon name='person-outline'></ion-icon>
-                        <input type='text' id='username' value='".$UserName2."' name='UserName' maxlength='20' autocomplete='off' required>
-                        <label for=''>Username</label>
+                      <label> User Name </label><br><br>
+                      <input type='text' id='username' name='username' maxlength='20' autocomplete='off' value='".$Username."' readonly>
                     </div>
                     <div class='inputbox'>
-                        <ion-icon name='lock-closed-outline'></ion-icon>
                         <input type='text' id='password' value='".$Pass2."' name='Pass' minlength='6' maxlength='8' autocomplete='off' required>
                         <label for=''>Password</label>
                     </div>
@@ -87,3 +85,4 @@ echo "<!DOCTYPE html>
 }
 $conn->close();
 ?>
+

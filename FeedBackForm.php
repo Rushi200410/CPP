@@ -63,13 +63,13 @@ $username = $_SESSION['UserName'];
 
 <div class="inputbox">
 <ion-icon name="person-sharp"></ion-icon>
-<input type="text" id="firstname" name="firstname" maxlength="20" autocomplete="off" onkeypress="return name12(event)" required>
+<input type="text" id="firstname" name="firstname" maxlength="20" autocomplete="off" onkeypress="return name12(event)">
 <label> First Name </label>
 </div>
 
 <div class="inputbox">
 <ion-icon name="people-sharp"></ion-icon>
-<input type="text" id="lastname" name="lastname" maxlength="20" autocomplete="off" onkeypress="return name12(event)" required>
+<input type="text" id="lastname" name="lastname" maxlength="20" autocomplete="off" onkeypress="return name12(event)">
 <label> Last Name : </label>
 </div>
 

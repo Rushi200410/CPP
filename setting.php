@@ -11,10 +11,10 @@
         <div><h1>&nbsp;&nbsp;
         <i class="bi bi-gear"></i> 
         <u><i>Settings </i></u>
-        </h1></div><br><br>
+        </h1></div><br><br><br>
         
         <div align="center">
-            <label><h3>click on Edit button to Change Your UserName and Password :-</h3></label><br>
+            <label><h3>click on Edit button to Change Your Account's Password :-</h3></label><br>
             <a href="edit.php"><button class="btn-lg btn btn-outline-info">Edit Account</button></a><br><br><br>
             <label><h3>click on Delete button to Delete your Account :-</h3></label><br>
             <a href="deleteuseracc.php"><button class="btn-lg btn btn-outline-info">Delete Account</button></a><br><br>

@@ -104,13 +104,13 @@ if ($result->num_rows > 0) {
 
 <div class='inputbox'>
 <ion-icon name='person-sharp'></ion-icon>
-<input type='text' id='firstname' name='firstname' maxlength='20' autocomplete='off' onkeypress='return name12(event)' value='".$firstname2."' required>
+<input type='text' id='firstname' name='firstname' maxlength='20' autocomplete='off' onkeypress='return name12(event)' value='".$firstname2."'>
 <label> First Name </label>
 </div>
 
 <div class='inputbox'>
 <ion-icon name='people-sharp'></ion-icon>
-<input type='text' id='lastname' name='lastname' maxlength='20' autocomplete='off' onkeypress='return name12(event)' value='".$lastname2."' required>
+<input type='text' id='lastname' name='lastname' maxlength='20' autocomplete='off' onkeypress='return name12(event)' value='".$lastname2."'>
 <label> Last Name : </label>
 </div>
 
